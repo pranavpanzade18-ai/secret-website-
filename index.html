@@ -1,0 +1,136 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Proposal 💗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="flowers">🌸　🌷　🌸　🌷　🌸</div>
+
+    <!-- PAGE 1 -->
+    <section class="page active" id="page1">
+        <div class="card">
+            <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
+                 class="main-img">
+
+            <h1>🌸 Will you go on a date with me? 🌸</h1>
+
+            <div class="buttons">
+                <button class="yes" onclick="yesClicked()">YES 💕</button>
+                <button class="no" id="noBtn" onclick="moveNo()">no... 🙈</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page" id="page2">
+        <div class="card">
+            <img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif"
+                 class="main-img">
+
+            <h1>WAIT YOU ACTUALLY SAID YES?? 😭</h1>
+            <p>I was so ready for you to say no 🥺</p>
+
+            <button onclick="nextPage(3)">okay okay! →</button>
+        </div>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page" id="page3">
+        <div class="card">
+
+            <div class="icon">🗓️🐾</div>
+
+            <h1>So... when are you free?</h1>
+
+            <label>Pick a Day ✨</label>
+            <input type="date" id="date">
+
+            <label>What Time? ⏰</label>
+            <select id="time">
+                <option value="">Select a time...</option>
+                <option>5:00 PM</option>
+                <option>6:00 PM</option>
+                <option>7:00 PM</option>
+                <option>8:00 PM</option>
+                <option>9:00 PM</option>
+            </select>
+
+            <button onclick="saveDate()">set the date! 💌</button>
+        </div>
+    </section>
+
+    <!-- PAGE 4 -->
+    <section class="page" id="page4">
+        <div class="card">
+
+            <h1>What are we feeling? 🍜✨</h1>
+
+            <div class="food-grid">
+
+                <div class="food" onclick="selectFood(this,'Pizza')">
+                    🍕
+                    <span>Pizza</span>
+                </div>
+
+                <div class="food" onclick="selectFood(this,'Sushi')">
+                    🍣
+                    <span>Sushi</span>
+                </div>
+
+                <div class="food" onclick="selectFood(this,'Burgers')">
+                    🍔
+                    <span>Burgers</span>
+                </div>
+
+                <div class="food" onclick="selectFood(this,'Pasta')">
+                    🍝
+                    <span>Pasta</span>
+                </div>
+
+                <div class="food" onclick="selectFood(this,'Tacos')">
+                    🌮
+                    <span>Tacos</span>
+                </div>
+
+                <div class="food" onclick="selectFood(this,'Ramen')">
+                    🍜
+                    <span>Ramen</span>
+                </div>
+
+            </div>
+
+            <button onclick="finishDate()">this one! →</button>
+
+        </div>
+    </section>
+
+    <!-- PAGE 5 -->
+    <section class="page" id="page5">
+        <div class="card final">
+
+            <div class="final-img">🥰</div>
+
+            <h1>
+                glad you didn't say no,<br>
+                be ready by 6, I'm coming to get you 🚗
+            </h1>
+
+            <p class="small">
+                P.S. normal people text. I made a website during lunch for you.
+                no big deal. 💗
+            </p>
+
+            <div class="hearts">💗 💗　💗</div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
